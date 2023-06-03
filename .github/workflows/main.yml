@@ -15,9 +15,9 @@ jobs:
           fetch-depth: 0 # add a space between the colon and the value
       - name: Add remote
         env:
-          HF: ${{ secrets.HG }} # add a closing curly brace
+          HG: ${{ secrets.HG }} # add a closing curly brace
         run: git remote add demo2_mlops https://CinnamonRoll:$HG@huggingface.co/spaces/CinnamonRoll/demo2_mlops
       - name: Push to hub
         env:
-          HF: ${{ secrets.HG }}
+          HG: ${{ secrets.HG }}
         run: git push --force  https://CinnamonRoll:$HG@huggingface.co/spaces/CinnamonRoll/demo2_mlops main
