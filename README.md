@@ -1,9 +1,8 @@
 ---
 title: Demo
-emoji:🎨
-
-colorFrom: purple
-colorTo: purple
+emoji: 🎨
+colorFrom: #FF0000
+colorTo: #00FF00
 sdk: gradio
 sdk_version: 3.0.6
 app_file: app.py
